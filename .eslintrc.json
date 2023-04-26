@@ -1,0 +1,59 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "prettier",
+        "eslint:recommended",
+        "eslint-config-prettier",
+        "plugin:react/jsx-runtime"
+    ],
+    "overrides": [],
+    "plugins": ["react", "eslint-plugin-prettier", "eslint-plugin-react"],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"]
+            }
+        }
+    },
+    "parserOptions": {
+        "parser": "@babel/eslint-parser",
+        "requireConfigFile": false,
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "ecmaFeatures": { "jsx": true }
+    },
+    "rules": {
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-pascal-case": 0,
+
+        "react/function-component-definition": "off",
+        "react/destructuring-assignment": [0],
+        "react/display-name": "off",
+        "react/prop-types": 0,
+
+        "import/prefer-default-export": "off",
+        "import/no-unresolved": "off",
+
+        "prettier/prettier": ["error", { "endOfLine": "auto" }],
+
+        "camelcase": ["error", { "properties": "never" }],
+        "eqeqeq": ["error", "always"],
+
+        "no-trailing-whitespace": 0
+        // "no-use-before-define": "off",
+        // "no-underscore-dangle": "off",
+        // "no-restricted-syntax": "off",
+        // "no-array-constructor": "off",
+        // "no-new-object": "off",
+        // "no-plusplus": "off",
+        // "prefer-const": "off",
+        // "no-console": "off",
+        // "no-shadow": "off",
+    }
+}
