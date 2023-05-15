@@ -1,9 +1,7 @@
-// import React from 'react'
+import './styles/app.css'
+import './styles/index.css'
 
-import './app.css'
-import './index.css'
-
-import logo from './logo.svg'
+const logo = '/logo.svg'
 
 export default () => {
     return (
